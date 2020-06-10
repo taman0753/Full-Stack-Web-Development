@@ -83,13 +83,100 @@
                   <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid"></div>
 	<div class="col-12 col-sm-3 align-self-center">
- <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveform">Reserve Table</a>
+ <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
+	<div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+	 <label for="number" class="col-md-2 col-form-label offset-md-1">Number of Guests</label>
+	<div class="col-md-9">
+	<!-- Default inline 1-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline1">1</label>
+</div>
+
+<!-- Default inline 2-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline2">2</label>
+</div>
+
+<!-- Default inline 3-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline3">3</label>
+</div>
+<!-- Default inline 1-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline4">4</label>
+</div>
+
+<!-- Default inline 2-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline5">5</label>
+</div>
+
+<!-- Default inline 3-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline6">6</label>
+</div>
+
+	</div>
+	</div>
+
+		<div class="form-group row">
+		 <label for="section" class="col-md-2 col-form-label offset-md-1">Section</label>
+			<div class="col-md-9">
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-success active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+  </label>
+  <label class="btn btn-danger">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+  </label>
+</div>
+
+
+			</div>
+			</div>
+			
+
+
+<div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-label offset-md-1">Date and Time</label>
+                        <div class="col-5 col-md-4">
+                            <input type="tel" class="form-control" id="Date" name="areacode" placeholder="Date">
+                        </div>
+                        <div class="col-5 col-md-4">
+                            <input type="tel" class="form-control" id="Time" name="telnum" placeholder="Time">
+                        </div></div>
+			<div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+				<button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Reserve</button>
+				
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+</div>
+</div>
 
     <div class="container">
 	<div class="row row-content">
@@ -217,72 +304,7 @@
                 
             </div>
         </div>
-<div class="row row-content" id="reserve">
- <div class="col-12 col-sm-8">
-                <div class="card">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-	 <form>
-	 <div class="form-group row">
-	 <label for="number" class="col-md-2 col-form-label offset-md-1">Number of Guests</label>
-	<div class="col-md-9">
-	<!-- Default inline 1-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline1">1</label>
-</div>
 
-<!-- Default inline 2-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline2">2</label>
-</div>
-
-<!-- Default inline 3-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline3">3</label>
-</div>
-<!-- Default inline 1-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline4">4</label>
-</div>
-
-<!-- Default inline 2-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline5">5</label>
-</div>
-
-<!-- Default inline 3-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline6">6</label>
-</div>
-
-	</div>
-	</div>
-			<div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label offset-md-1">Date and Time</label>
-                        <div class="col-5 col-md-4">
-                            <input type="tel" class="form-control" id="Date" name="areacode" placeholder="Date">
-                        </div>
-                        <div class="col-5 col-md-4">
-                            <input type="tel" class="form-control" id="Time" name="telnum" placeholder="Time">
-                        </div></div>
-			<div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Reserve</button>
-                        </div>
-                    </div>
-
-
-
-</form>
-</div>
-</div>
-</div>
-    </div>
 
     <footer class="footer">
         <div class="container">
@@ -329,11 +351,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	 <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+	
 </body>
 
 </html>
