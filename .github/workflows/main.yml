@@ -1,7 +1,7 @@
 name: Build and Deploy to Gatsby every two hours
 
 on:
-  # 1. Trigger the workflow every 2 hours
+
   schedule:
     - cron: "0 */2 * * *"
 
