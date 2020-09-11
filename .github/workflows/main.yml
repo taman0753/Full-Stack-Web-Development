@@ -10,8 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Build site
-        run: npm run build
+      
       # Deploy the site with netlify-cli
       - name: Deploy Site
         env:
