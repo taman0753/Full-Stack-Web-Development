@@ -14,5 +14,5 @@ jobs:
           node-version: 8
       - run: npm install -g surge
       - run: npm install mocha --save-dev
-      - run: npm test
+      - run: npm run test
       - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
