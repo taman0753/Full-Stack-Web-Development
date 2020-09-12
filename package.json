@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "mocha"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
