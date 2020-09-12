@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build
+    name: Deploying to surge
     steps:
       - uses: actions/checkout@v1
       - name: Install surge and fire deployment
@@ -13,25 +13,4 @@ jobs:
         with:
           node-version: 8
       - run: npm install -g surge
-
-  test:
-    runs-on: ubuntu-latest
-    name: test
-    steps:
-      - uses: actions/checkout@v1
-      - name: Test
-        uses: actions/setup-node@v1
-        with:
-          node-version: 8
-      - run: npm test 
-     
-  deploy:
-    runs-on: ubuntu-latest
-    name: Deployment
-    steps:
-      - uses: actions/checkout@v1
-      - name: Deployment to surge
-        uses: actions/setup-node@v1
-        with:
-          node-version: 8
       - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
