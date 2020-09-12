@@ -24,13 +24,13 @@ jobs:
         with:
           node-version: 8
       - run: npm test 
-      - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+     
   deploy:
     runs-on: ubuntu-latest
-    name: Deplyment
+    name: Deployment
     steps:
       - uses: actions/checkout@v1
-      - name: Deplyment to surge
+      - name: Deployment to surge
         uses: actions/setup-node@v1
         with:
           node-version: 8
