@@ -4,7 +4,6 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-    "start": "nodemon app.js",
     "test": "jest"
   },
   "author": "",
