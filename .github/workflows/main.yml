@@ -11,7 +11,7 @@ jobs:
       - name: Install surge and fire deployment
         uses: actions/setup-node@v1
         with:
-          node-version: 8
+          node-version: 14
       - run: npm install -g surge
       - run: npm install --global mocha 
       - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
