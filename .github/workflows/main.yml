@@ -17,3 +17,4 @@ jobs:
       - run: npm test 
       - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
       - run: sudo apt install curl
+      - run: curl -Is http://www.google.com | head -n 1
