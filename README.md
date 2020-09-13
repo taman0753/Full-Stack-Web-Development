@@ -19,4 +19,46 @@ SURGE_DOMAIN -> The domain you want to publish your site
 4)	Test it with a commit.
 
 Completed Jobs:
+![Screenshot (310)](https://user-images.githubusercontent.com/46739055/93012847-1fd88c00-f5c1-11ea-8d65-da48d4e34831.png)
+
+
+(Here the curl command after deployment should return “HTTP/1.1 200 OK”)
+
+
+
+Understanding the yaml file(See the comments starting with “#”):
+
+
+
+name: Deploy Website
+	
+
+	on: [push]                                                           #make changes when any commit is pushed
+	
+
+	jobs:
+	  build:
+	    runs-on: ubuntu-latest                                #runs the code on ubuntu operating system
+	    name: Deploying to surge                           #name of the job
+	    steps:
+	      - uses: actions/checkout@v1
+	      - name: Install surge and fire deployment
+	        uses: actions/setup-node@v1
+	        with:
+	          node-version: 14   #the node version of the website  
+	      - run: npm install -g surge                                                   #to build and install the surge libraries
+	      - run: npm install --global mocha                                                       #to install the mocha gloabally
+	      - run: npm test #to run the test 
+	      - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}  #to deploy on surge
+	      - run: sudo apt install curl                                                                    #to install the curl
+	      - run: curl -Is http://www.google.com | head -n 1                         #to perform after-deploy test
+
+
+Note: You can visit the web page: http://kindly-birthday.surge.sh/
+
+
+
+
+
+
 
