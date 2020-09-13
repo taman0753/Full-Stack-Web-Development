@@ -15,3 +15,8 @@ SURGE_DOMAIN -> The domain you want to publish your site
 (Here we are going to do two test ,one before deployment with mocha and second after deployment with curl command)
 
 ![Screenshot (311)](https://user-images.githubusercontent.com/46739055/93012822-d8ea9680-f5c0-11ea-8010-81edf72f5fc3.png)
+
+4)	Test it with a commit.
+
+Completed Jobs:
+
